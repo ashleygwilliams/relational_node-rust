@@ -1,6 +1,11 @@
 use std::env;
 use std::fs::File;
 
+mod value;
+mod variable;
+mod state;
+mod goal;
+
 fn main() {
   let filename: String = match env::args().nth(1) {
     Some(filename)  => filename,
